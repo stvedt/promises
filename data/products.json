@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "title": "Artisan Series 5 Qt. Tilt-Head Stand Mixer",
+      "brand": "KitchenAid",
+      "price": 379.99,
+      "size": "5 qt.",
+      "shipping": "FedEx Home Delivery"
+    },
+    {
+      "title": "Ultra Power 5-Speed Hand Mixer",
+      "brand": "KitchenAid",
+      "price": 39.99,
+      "shipping": "FedEx Home Delivery"
+    },
+    {
+      "title": "Round Classic Waffle Maker",
+      "brand": "CuisinArt",
+      "price": 29.99,
+      "shipping": "FedEx Home Delivery"
+    }
+  ] 
+}
