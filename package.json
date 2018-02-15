@@ -1,0 +1,24 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "### lack of sequentiality",
+  "main": "example-1.js",
+  "dependencies": {
+    "node-fetch": "^2.0.0",
+    "prettyjson": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stvedt/promises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stvedt/promises/issues"
+  },
+  "homepage": "https://github.com/stvedt/promises#readme"
+}
