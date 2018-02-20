@@ -41,3 +41,11 @@ If at any point in your promise chain an error is thrown or the promise is rejec
 Fetch is another JS API which returns a promise as result. Since a promise is the return value we can chain/compose with .then() & .catch()
 
 The .json method from Fetch will also return a promise. This is because the body of an API response can be large and require time to process. Hence, when we `return response.json()` we chain .then on it.
+
+# Promise.all
+
+For use when multiple asynchronous calls are occuring at the same time. With callbacks it was necessary for the first call to complete to kick off the next and so on. So, three calls at a second a peice would take 3 seconds to complete. With promise all you can start them concurrently and upon the completion of all three then a new promise will be returned with an array of the values of the original promises.
+
+# Promise.race
+
+This acts a little unintuitively. I upon seeing it named `race` assumed it would ensure that calls happen in a particular order to eliminate race conditions. It however will return the first promise that resolve the quickest. This is also regardless of whether the quickest promise is resolved/rejected.
