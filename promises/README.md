@@ -1,3 +1,9 @@
+## Set up
+
+Run `npm install` in `/promises/' directory.
+
+To run and example from command line: `node src/example-*`
+
 ## Callback more like drawbacks.
 
 ### Lack of trustability
