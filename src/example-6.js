@@ -5,7 +5,7 @@ let getProducts = fetch('https://raw.githubusercontent.com/stvedt/promises/maste
 
 getProducts.then((response) => {
 
-  // throw new Error('sending error');
+  throw new Error('sending error');
   if(response.status === 404){
     return Promise.reject(response.status);
   }

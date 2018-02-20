@@ -17,6 +17,7 @@ myPromise.then((outcome) => {
   console.log('then 2:', outcome);
   if (outcome.status === 400) {
     return Promise.reject('EEK! 400!')
+    // Similarly thrown can be used
     // throw 'EEK! 400!';
     // throw new Error('EEK! 400!');
   }

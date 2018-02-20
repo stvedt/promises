@@ -13,10 +13,10 @@ console.log('promise', myPromise);
 
 myPromise.then((outcome) => {
   console.log('then:', outcome);
-  console.log('promise state:', myPromise)
+  console.log('promise state:', myPromise);
 }).catch((err) => {
   console.log('error:', err);
-  console.log('promise state:', myPromise)
+  console.log('promise state:', myPromise);
 });
 
 

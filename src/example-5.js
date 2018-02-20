@@ -4,7 +4,7 @@ const prettyjson = require('prettyjson');
 let getProducts = fetch('https://raw.githubusercontent.com/stvedt/promises/master/data/products.json');
 
 getProducts.then((response) => {
-  return response.json();//return another promise
+  return response.json(); // Fetch.json() returns another promise
 
 }).then((json) => {
 

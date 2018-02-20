@@ -7,7 +7,7 @@ let cat2 = fetch('https://github.com/stvedt/promises/raw/master/images/cat2.jpg'
 let cat3 = fetch('https://github.com/stvedt/promises/raw/master/images/cat3.jpg');
 
 let cat4 = fetch('https://github.com/stvedt/promises/raw/master/images/cat-fail.jpg')
-// .then((response)=>{
+// .then((response)=>{ //can also be done but the for loop below is more DRY
 //   if (response.status === 404 ){
 //     return Promise.reject('404 error');
 //   }
