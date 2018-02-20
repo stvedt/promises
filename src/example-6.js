@@ -1,18 +1,19 @@
 const fetch = require('node-fetch');
 const prettyjson = require('prettyjson');
 
-let cat1 = fetch('https://github.com/stvedt/promises/raw/master/images/cat1.jpg');
+let getProducts = fetch('https://raw.githubusercontent.com/stvedt/promises/master/data/products-fail.json');
 
-let cat2 = fetch('https://github.com/stvedt/promises/raw/master/images/cat2.jpg');
+getProducts.then((response) => {
 
-let cat3 = fetch('https://github.com/stvedt/promises/raw/master/images/cat3.jpg');
+  console.log(response.status);
+  if(response.status === 404){
+    return Promise.reject(response.status);
+  }
+  return response.json();
 
-Promise.all([cat1, cat2, cat3])
-.then((response) => {
-  console.log('response:', response);
 }).then((json) => {
-
-  console.log('json', json);
+  //this never happens
+  console.log(prettyjson.render(json));
 
 }).catch((err) => {
   console.log('error:', err);
