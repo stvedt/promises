@@ -16,7 +16,7 @@ let cat4 = fetch('https://github.com/stvedt/promises/raw/master/images/cat-fail.
 Promise.all([cat1, cat2, cat3, cat4])
 .then((response) => {
   console.log('complete');
-  for(var i = 0; i < response.length; i++){
+  for(let i = 0; i < response.length; i++){
     if (response[i].status === 404 ){
       return Promise.reject('404 error');
     }

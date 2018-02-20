@@ -1,4 +1,4 @@
-var myPromise = new Promise(function(resolve, reject) {
+let myPromise = new Promise(function(resolve, reject) {
   //do something Async
   setTimeout(() => {
     if(true) {
@@ -11,12 +11,14 @@ var myPromise = new Promise(function(resolve, reject) {
 });
 
 myPromise.then((outcome) => {
-  console.log('then:', outcome);
+  console.log('then 1:', outcome);
   return { status: 400 };
 }).then((outcome) => {
   console.log('then 2:', outcome);
   if (outcome.status === 400) {
-    throw 'EEK! 400';
+    return Promise.reject('EEK! 400!')
+    // throw 'EEK! 400!';
+    // throw new Error('EEK! 400!');
   }
   return 'another value';
 }).then((outcome) => {

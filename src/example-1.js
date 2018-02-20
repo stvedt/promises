@@ -14,7 +14,7 @@ function later(message){
 doSomething(later);
 
 /* promise */
-// var myPromise = new Promise(function(resolve, reject) {
+// let myPromise = new Promise(function(resolve, reject) {
 // 	if(true) {
 // 		resolve('Success!');
 // 	} else {

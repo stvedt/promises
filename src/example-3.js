@@ -18,7 +18,7 @@ laterCallback(1, () => {
 
 /* promise */
 
-// var myPromise = new Promise(function(resolve, reject) {
+// let myPromise = new Promise(function(resolve, reject) {
 //   //do something Async
 //   setTimeout(() => {
 //     if(true) {
